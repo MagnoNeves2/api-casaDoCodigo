@@ -26,7 +26,7 @@ public class AutorController {
 
 	@GetMapping
 	public ResponseEntity<AutorDTO> listar() {
-		/* TESTE */
+		/* TESTE! */
 		AutorModel teste = new AutorModel("teste", "teste@gmail.com", "teste teste teste");
 		AutorDTO sla = new AutorDTO(teste);
 		return ResponseEntity.status(HttpStatus.OK).body(sla);
